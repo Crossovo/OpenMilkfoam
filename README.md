@@ -2,11 +2,11 @@
 Defects usually come from the electronics. We implement a new one based on the Arduino (8Bit).
 
 ## Background
-The milk frother has a good hardware base but unstable electronics. Most defects come from the electronics.
+The milk frother has a good hardware base but unstable electronics. Most defects come from this electronics.
 
-I don't want to throw the appliance away just because the control board fail.
+I don't want to throw the appliance away just because the control board fail. 
 
-Hence this project.
+Replacement Parts are not available on the market. Hence this project.
 
 ## Boards
 There are 2 circuit boards in the unit. 
@@ -15,6 +15,7 @@ There are 2 circuit boards in the unit.
 - with the uC 
 - the push button input 
 - 3 LEDs for the selection made
+- power supply and control of the motor for the rotor
 
 ### power electronics board
 - with relays for the heater 
@@ -22,8 +23,17 @@ There are 2 circuit boards in the unit.
 - sufficient protection elements (temperature monitor, fuse which trips in case of overtemperature) to protect the unit for thermal overloads.
 
 
-## Communication
+## Functions we need
+The device should offer the same functionality with the Arduino. There are 3 different programmes:
 
-----------
-|uC Board|
-----------
+- Cold milk foam
+- Milk foam warm
+- Milk foam hot
+
+The selection takes place via a single button.
+
+| Modus  | Heater | Motor  | Duration (sec) |
+| ------------- | ------------- | ------------- | ------------- |
+| Cold milk foam  | off  | on  | 60  |
+| Milk foam warm  | on (?? sec)  | on  | ???  |
+| Milk foam hot  | on (?? sec)  | on  | ???  |
