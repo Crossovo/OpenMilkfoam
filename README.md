@@ -38,18 +38,11 @@ There are 4 cables from the power electronic board.
 ## Functions we need
 The device should offer the same functionality with the Arduino as a one button system.  BUT - I additionaly want to enter 3 differnt milks varieties. 
 
-There are 3 different programmes:
-
-- Cold milk foam
-- Milk foam warm
-- Milk foam hot
-
 The selection takes place via a single button.
 
 ### The rationale:
 - The selection of the type (cold/warm/hot) should be able to be changed at the touch of a button. 
 - The type of milk can then set by pressing the button for the desired programme. 
-
 
 
 ### Modus
@@ -61,7 +54,7 @@ The selection takes place via a single button.
 
 With no input, after 2 sec - the device os going to blinking for 
 
-### Milk 
+### Milk varieties
 | Milk  | LED blinking |
 | ------------- | ------------- |
 | cow | 1 | 
@@ -76,3 +69,11 @@ I assume that everything is controlled via timer (the mains frequency is measure
 ## Tasks for the next steps
 - how much time need a cold milk (7°C) from the cooler to heat up to different temperatures in the bootle with max laods
 - a programm draft sketch in arduino to implement the "core system" for the one button device
+
+
+### Feature Ideas
+- a sensor as input for the liquid temperature in the vessel (sensor must be plugged in externally)
+  - warming baby milk (37°C)
+  - perfect milk foam (measured not over time)
+- Sound for feedback
+- ...
