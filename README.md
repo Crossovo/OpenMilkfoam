@@ -22,9 +22,9 @@ There are 2 circuit boards in the unit.
 - 5V power supply for the control board
 - sufficient protection elements (temperature monitor, fuse which trips in case of overtemperature) to protect the unit for thermal overloads.
 
-### Cables
+## intern cable
 ### from the power electronic board 
-There are 4 cores from the power electronic board.
+There are 4 cables from the power electronic board.
 
 - black - 5V DC
 - white - GND
@@ -36,7 +36,7 @@ There are 4 cores from the power electronic board.
 - Input for the Motor (5V)
 
 ## Functions we need
-The device should offer the same functionality with the Arduino.  BUT - I additionaly want to enter 3 differnt milks varieties. 
+The device should offer the same functionality with the Arduino as a one button system.  BUT - I additionaly want to enter 3 differnt milks varieties. 
 
 There are 3 different programmes:
 
@@ -46,6 +46,16 @@ There are 3 different programmes:
 
 The selection takes place via a single button.
 
+### The rationale:
+- The selection of the type (cold/warm/hot) should be able to be changed at the touch of a button. The display is via LEDs 1 to 3.
+- The type of milk can then be set by pressing and holding the button for the desired programme. 
+1 = Cow's milk
+2= Almond milk
+3 = Oat milk
+
+After 5 seconds and if no further selection has taken place, the programme starts.
+
+### Modus
 | Modus  | Heater | Motor  | Duration (sec) | Target Temperatur | LED |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | cow Cold milk foam  | off  | on  | 60  | % | 1 |
@@ -56,10 +66,9 @@ The selection takes place via a single button.
 | out Milk warm  | on (?? sec)  | on  | ???  | 50°C | 2 |
 | out Milk foam  | on (?? sec)  | on  | ???  | 50°C | 3 |
 
-
 There is no direct temperature measurement of the heating or the milk. 
 I assume that everything is controlled via timer (the mains frequency is measured at the uC).
 
 ## Tasks for the next steps
 - how much time need a cold milk (7°C) from the cooler to heat up to different temperatures in the bootle with max laods
-- a programm draft sketch in arduino
+- a programm draft sketch in arduino to implement the "core system" for the one button device
