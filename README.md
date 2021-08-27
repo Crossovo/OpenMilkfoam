@@ -6,7 +6,9 @@ The milk frother has a good hardware base but unstable electronics. Most defects
 
 I don't want to throw the appliance away just because the control board fail. 
 
-Replacement Parts are not available on the market. Hence this project.
+Replacement Parts are not available on the market. 
+
+Hence this project.
 
 ## Boards
 There are 2 circuit boards in the unit. 
