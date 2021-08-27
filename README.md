@@ -1,4 +1,4 @@
-# jura_milkfrother
+# Based on the Jura Milk Frother Hot & Cold 24019
 Defects usually come from the electronics. We implement a new one based on the Arduino (8Bit).
 
 ## Background
