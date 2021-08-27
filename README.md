@@ -4,12 +4,26 @@ Defects usually come from the electronics. We implement a new one based on the A
 ## Background
 The milk frother has a good hardware base but unstable electronics. Most defects come from the electronics.
 
-I don't want to throw the appliance away just because the electronics fail.
+I don't want to throw the appliance away just because the control board fail.
 
 Hence this project.
 
-There are 2 circuit boards in the unit. A control board with the uC on it, the push button input and 3 LEDs for the selection made.
+## Boards
+There are 2 circuit boards in the unit. 
 
-A power electronics board with relays for the heater and the 5V power supply for the control board. This board is provided with sufficient protection elements (temperature monitor, fuse which trips in case of overtemperature) to protect the unit for thermal overloads.
+### A control board 
+- with the uC 
+- the push button input 
+- 3 LEDs for the selection made
 
-This base is good.
+### power electronics board
+- with relays for the heater 
+- 5V power supply for the control board
+- sufficient protection elements (temperature monitor, fuse which trips in case of overtemperature) to protect the unit for thermal overloads.
+
+
+## Communication
+
+----------
+|uC Board|
+----------
