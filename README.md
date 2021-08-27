@@ -47,24 +47,28 @@ There are 3 different programmes:
 The selection takes place via a single button.
 
 ### The rationale:
-- The selection of the type (cold/warm/hot) should be able to be changed at the touch of a button. The display is via LEDs 1 to 3.
-- The type of milk can then be set by pressing and holding the button for the desired programme. 
-  - Cow's milk - LED 1
-  - Almond milk - LED 2
-  - Oat milk - LED 3
+- The selection of the type (cold/warm/hot) should be able to be changed at the touch of a button. 
+- The type of milk can then set by pressing the button for the desired programme. 
 
-After 5 seconds and if no further selection has taken place, the programme starts.
+
 
 ### Modus
 | Modus  | Heater | Motor  | Duration (sec) | Target Temperatur | LED |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| cow Cold milk foam  | off  | on  | 60  | % | 1 |
-| cow Milk warm  | on (?? sec)  | on  | ???  | 50°C | 2 |
-| cow Milk foam hot  | on (?? sec)  | on  | ???  | 60°C | 3 |
-| almond Milk warm  | on (?? sec)  | on  | ???  | 50°C | 2 | 
-| almond Milk foam  | on (?? sec)  | on  | ???  | 50°C | 3 |
-| out Milk warm  | on (?? sec)  | on  | ???  | 50°C | 2 |
-| out Milk foam  | on (?? sec)  | on  | ???  | 50°C | 3 |
+| Cold milk foam  | off  | on  | 60  | % | 1 |
+| Milk warm  | on (?? sec)  | on  | ???  | 50°C | 2 |
+| Milk foam hot  | on (?? sec)  | on  | ???  | 60°C | 3 |
+
+With no input, after 2 sec - the device os going to blinking for 
+
+### Milk 
+| Milk  | LED blinking |
+| ------------- | ------------- |
+| cow | 1 | 
+| almond | 2 |
+| out | 3 |
+
+After 5 seconds later or if no further selection has taken place, the programme starts.
 
 There is no direct temperature measurement of the heating or the milk. 
 I assume that everything is controlled via timer (the mains frequency is measured at the uC).
