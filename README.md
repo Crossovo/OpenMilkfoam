@@ -49,9 +49,9 @@ The selection takes place via a single button.
 ### The rationale:
 - The selection of the type (cold/warm/hot) should be able to be changed at the touch of a button. The display is via LEDs 1 to 3.
 - The type of milk can then be set by pressing and holding the button for the desired programme. 
--- Cow's milk - LED 1
--- Almond milk - LED 2
--- Oat milk - LED 3
+  - Cow's milk - LED 1
+  - Almond milk - LED 2
+  - Oat milk - LED 3
 
 After 5 seconds and if no further selection has taken place, the programme starts.
 
