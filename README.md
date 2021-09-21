@@ -14,10 +14,13 @@ We can reuse some of the defective circuit board.
 
 The resistors, LEDs, connectors and cables.
 
-The new replacement board is controlled via transistors. 
-So we need an additional 2xBC337 and 2x1k resistors.
+The new replacement board is controlled via transistors.
 
-## Into the jura milk frother
+So we need an additional 2xBC337 and 2x1k resistors. 
+The new pcb board and one wemos D1 mini. 
+
+
+## Jump into the jura milk frother
 There are 2 circuit boards in the milk frother. 
 
 ### Boards
@@ -53,8 +56,7 @@ The selection takes place via a single button.
 
 ### The rationale:
 - The selection of the type (cold/warm/hot) should be able to be changed at the touch of a button. 
-- The type of milk can then set by pressing the button for the desired programme. 
-
+- The type of milk can then set by pressing the button for the desired programme.
 
 ### Modus
 | Modus  | Heater | Motor  | Duration (sec) | Target Temperatur | LED |
@@ -74,18 +76,19 @@ With no input, after 2 sec, the device os going to blinking for next...
 
 After 5 seconds later or if no further selection has taken place, the programme starts.
 
-### The 
+### The challange
 There is no direct temperature measurement of the heating or the milk. 
 I assume that everything is controlled via timer (the mains frequency is measured at the uC).
 
 ## Tasks for the next steps
 - how much time need a cold milk (7°C) from the cooler to heat up to different temperatures in the bootle with max laods
 - a programm draft sketch in arduino to implement the "core system" for the one button device
-
+- give the device a second life
 
 ### Feature Ideas
-- a sensor as input for the liquid temperature in the vessel (sensor must be plugged in externally)
+- a sensor as input for the liquid temperature in the vessel (sensor must be added on the pcb over a output)
   - warming baby milk (37°C)
-  - perfect milk foam (measured not over time)
-- Sound for feedback
-- ...
+  - perfect milk foam (measured by temperature not over time)
+- glutin glue warmer (55°C)
+- push notification at end
+- web interface for settings
