@@ -7,7 +7,17 @@ The jura milk frother has a good hardware base but in many cases unstable electr
 We don't want to throw the appliance away just because the control board fail.
 Replacement Parts are not available on the market. Until now.
 
-## Into the milk frother
+## The Replacement
+
+The board is easy to replace. Has a size of 4cm x 4cm.
+We can reuse some of the defective circuit board. 
+
+The resistors, LEDs, connectors and cables.
+
+The new replacement board is controlled via transistors. 
+So we need an additional 2xBC337 and 2x1k resistors.
+
+## Into the jura milk frother
 There are 2 circuit boards in the milk frother. 
 
 ### Boards
@@ -53,7 +63,7 @@ The selection takes place via a single button.
 | Milk warm  | on (?? sec)  | on  | ???  | 50°C | 2 |
 | Milk foam hot  | on (?? sec)  | on  | ???  | 60°C | 3 |
 
-With no input, after 2 sec - the device os going to blinking for 
+With no input, after 2 sec, the device os going to blinking for next...
 
 ### Milk varieties
 | Milk  | LED blinking |
@@ -64,6 +74,7 @@ With no input, after 2 sec - the device os going to blinking for
 
 After 5 seconds later or if no further selection has taken place, the programme starts.
 
+### The 
 There is no direct temperature measurement of the heating or the milk. 
 I assume that everything is controlled via timer (the mains frequency is measured at the uC).
 
