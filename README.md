@@ -1,4 +1,4 @@
-# OpenMilkfoam
+# OpenMilkfroather
 Milk frother and OpenSource? Yes indeed, this is a project based on the Jura milk frother Hot & Cold 24019, which hardware is technically OK and the electronics no longer work. The idea is born to bring the hardware back to life - Welcome to OpenMilkfoam.
 
 ## Background
