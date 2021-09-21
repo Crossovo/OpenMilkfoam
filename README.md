@@ -1,30 +1,30 @@
 # OpenMilkfroather
-Milk frother and OpenSource? Yes indeed, this is a project based on the Jura milk frother Hot & Cold 24019, which hardware is technically OK and the electronics no longer work. The idea is born to bring the hardware back to life - Welcome to OpenMilkfoam.
+Milk frother and OpenSource? Yes indeed, this is a project based on the Jura milk frother Hot & Cold 24019, which hardware is technically OK and the electronics no longer work. The idea is born to bring the hardware back to life - Welcome to OpenMilkfrother.
 
 ## Background
-The milk frother has a good hardware base but unstable electronics. Most defects come from this electronics.
+The jura milk frother has a good hardware base but in many cases unstable electronics. Most defects come from this electronics.
 
-I don't want to throw the appliance away just because the control board fail. 
+We don't want to throw the appliance away just because the control board fail.
 Replacement Parts are not available on the market. Until now.
 
-## Boards
+## Into the milk frother
 There are 2 circuit boards in the milk frother. 
 
-!! The only thing we change is the control board!!
+### Boards
 
-### A control board 
+#### A control board 
 - with the uC 
 - one push button for input 
 - 3 LEDs for the selection made
 - power supply and control of the motor for the rotor
 
-### power electronics board 220V
+#### power electronics board 220V
 - with relays for the heater 
 - 5V power supply for the control board
 - sufficient protection elements (temperature monitor, fuse which trips in case of overtemperature) to protect the unit for thermal overloads.
 
-## intern cable
-### from the power electronic board 
+### cables and pin seeting
+#### from the power electronic board 
 There are 4 cables from the power electronic board.
 
 - black - 5V DC
@@ -32,7 +32,7 @@ There are 4 cables from the power electronic board.
 - blue - Input to start the heater
 - red - Output from transformer as 1V AC to measure the frequency
 
-### from the uC Board
+#### from the uC Board
 - GND
 - Input for the Motor (5V)
 
