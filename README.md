@@ -1,25 +1,24 @@
-# Based on the Jura Milk Frother Hot & Cold 24019
-Defects usually come from the electronics. We implement a new one based on the Arduino (8Bit).
+# OpenMilkfoam
+Milk Foam and OpenSource? Yes indeed, this is a project based on the Jura milk frother Hot & Cold 24019, which hardware is technically OK and the electronics no longer work. The idea is born to bring the hardware back to life - Welcome to OpenMilkfoam.
 
 ## Background
 The milk frother has a good hardware base but unstable electronics. Most defects come from this electronics.
 
 I don't want to throw the appliance away just because the control board fail. 
-
-Replacement Parts are not available on the market. 
-
-Hence this project.
+Replacement Parts are not available on the market. Until now.
 
 ## Boards
-There are 2 circuit boards in the unit. 
+There are 2 circuit boards in the milk frother. 
+
+!! The only thing we change is the control board!!
 
 ### A control board 
 - with the uC 
-- the push button input 
+- one push button for input 
 - 3 LEDs for the selection made
 - power supply and control of the motor for the rotor
 
-### power electronics board
+### power electronics board 220V
 - with relays for the heater 
 - 5V power supply for the control board
 - sufficient protection elements (temperature monitor, fuse which trips in case of overtemperature) to protect the unit for thermal overloads.
